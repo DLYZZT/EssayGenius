@@ -1,4 +1,4 @@
-# 作文批改系统 (Paper-Check)
+# 作文天才 (Essay-Genius)
 
 基于Vue.js, LangChain和OpenAI GPT-4o的作文批改系统，支持Docker部署。
 
