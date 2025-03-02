@@ -1,0 +1,67 @@
+# 版本控制
+.git
+.gitignore
+
+# Python生成的文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+.tox/
+nosetests.xml
+coverage.xml
+
+# 虚拟环境
+env/
+venv/
+ENV/
+.env
+
+# 日志
+logs/
+*.log
+
+# 编辑器和系统文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker相关
+docker-compose.yml
+docker-compose.yaml
+Dockerfile*
+.dockerignore
+
+# 文档和其他
+README.md
+LICENSE
+.github/
+docs/
+tests/
+
+# 临时文件
+tmp/
+temp/ 

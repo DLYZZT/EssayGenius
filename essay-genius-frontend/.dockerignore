@@ -1,0 +1,46 @@
+# 依赖文件
+node_modules
+.npm
+.eslintcache
+
+# 开发环境相关
+.git
+.gitignore
+README.md
+.editorconfig
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+# 注意：我们需要保留.env.production文件，用于Docker构建
+
+# 调试和日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 测试文件
+/tests
+/coverage
+
+# 编辑器和系统文件
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# 其他不需要的文件
+docker-compose.yml
+docker-compose.yaml
+Dockerfile*
+.dockerignore
+*.md
+*.log 

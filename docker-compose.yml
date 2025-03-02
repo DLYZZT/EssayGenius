@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # 前端服务
+  frontend:
+    build:
+      context: ./essay-genius-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  # 后端服务
+  backend:
+    build:
+      context: ./essay-genius-backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    networks:
+      - app-network
+    restart: unless-stopped
+    volumes:
+      - backend-data:/app/data
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  backend-data: 
